@@ -1,0 +1,20 @@
+CLICK BACK
+2021-03-18 09:09:12.256 2773-2773/ro.pub.systems.eim.lab02.activitylifecyclemonitor D/activitylifecycle: onPause() method was invoked
+2021-03-18 09:09:12.719 2773-2773/ro.pub.systems.eim.lab02.activitylifecyclemonitor D/activitylifecycle: onStop() method was invoked
+2021-03-18 09:09:12.719 2773-2773/ro.pub.systems.eim.lab02.activitylifecyclemonitor D/activitylifecycle: onDestroy() method was invoked
+
+CLICK OK
+2021-03-18 09:10:45.541 2773-2773/ro.pub.systems.eim.lab02.activitylifecyclemonitor I/activitylifecycle: username: eim password: eim
+2021-03-18 09:10:45.542 2773-2773/ro.pub.systems.eim.lab02.activitylifecyclemonitor I/activitylifecycle: credential.getUsername(): eim credential.getPassword(): eim
+
+CLICK LIST APPS
+2021-03-18 09:11:42.215 2949-2949/ro.pub.systems.eim.lab02.activitylifecyclemonitor D/activitylifecycle: onPause() method was invoked
+2021-03-18 09:11:42.285 2949-2949/ro.pub.systems.eim.lab02.activitylifecyclemonitor D/activitylifecycle: onStop() method was invoked
+
+ROTATE PHONE
+2021-03-18 09:12:20.111 2998-2998/ro.pub.systems.eim.lab02.activitylifecyclemonitor D/activitylifecycle: onPause() method was invoked
+2021-03-18 09:12:20.137 2998-2998/ro.pub.systems.eim.lab02.activitylifecyclemonitor D/activitylifecycle: onStop() method was invoked
+2021-03-18 09:12:20.138 2998-2998/ro.pub.systems.eim.lab02.activitylifecyclemonitor D/activitylifecycle: onDestroy() method was invoked
+2021-03-18 09:12:20.163 2998-2998/ro.pub.systems.eim.lab02.activitylifecyclemonitor D/activitylifecycle: onCreate() method was invoked without a previous state
+2021-03-18 09:12:20.164 2998-2998/ro.pub.systems.eim.lab02.activitylifecyclemonitor D/activitylifecycle: onStart() method was invoked
+2021-03-18 09:12:20.167 2998-2998/ro.pub.systems.eim.lab02.activitylifecyclemonitor D/activitylifecycle: onResume() method was invoked
