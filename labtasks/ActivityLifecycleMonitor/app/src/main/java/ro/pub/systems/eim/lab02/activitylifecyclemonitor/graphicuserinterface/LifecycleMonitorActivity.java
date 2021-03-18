@@ -66,18 +66,7 @@ public class LifecycleMonitorActivity extends AppCompatActivity {
             Log.d(Constants.TAG, "onCreate() method was invoked without a previous state");
         } else {
             Log.d(Constants.TAG, "onCreate() method was invoked with a previous state");
-            if (savedInstanceState.containsKey(Constants.USERNAME_EDIT_TEXT)) {
-                EditText usernameEditText = (EditText)findViewById(R.id.username_edit_text);
-                usernameEditText.setText(savedInstanceState.getString(Constants.USERNAME_EDIT_TEXT));
-            }
-            if (savedInstanceState.containsKey(Constants.PASSWORD_EDIT_TEXT)) {
-                EditText passwordEditText = (EditText)findViewById(R.id.password_edit_text);
-                passwordEditText.setText(savedInstanceState.getString(Constants.PASSWORD_EDIT_TEXT));
-            }
-            if (savedInstanceState.containsKey(Constants.REMEMBER_ME_CHECKBOX)) {
-                CheckBox rememberMeCheckbox = (CheckBox)findViewById(R.id.remember_me_checkbox);
-                rememberMeCheckbox.setChecked(savedInstanceState.getBoolean(Constants.REMEMBER_ME_CHECKBOX));
-            }
+            restoreInstanceStateInternal(savedInstanceState);
         }
     }
 
@@ -128,12 +117,14 @@ public class LifecycleMonitorActivity extends AppCompatActivity {
             savedInstanceState.putString(Constants.PASSWORD_EDIT_TEXT, passwordEditText.getText().toString());
             savedInstanceState.putBoolean(Constants.REMEMBER_ME_CHECKBOX, rememberMeCheckBox.isChecked());
         }
+        Log.d(Constants.TAG, "onSaveInstanceState() method was invoked");
     }
 
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         restoreInstanceStateInternal(savedInstanceState);
+        Log.d(Constants.TAG, "onRestoreInstanceState() method was invoked");
     }
 
     private void restoreInstanceStateInternal(Bundle savedInstanceState) {
